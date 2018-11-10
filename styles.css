@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron|Open+Sans|Ubuntu|Indie+Flower");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("snowing_city_sm.jpeg") no-repeat;
+  background-position-x: 50%;
+  background-color: rgb(29, 29, 29);
+}
+
+/* Container section */
+.container {
+  position: relative;
+  width: 500px;
+  height: 350px;
+  margin: 300px auto;
+  background: rgba(92, 92, 92, 0.7);
+  text-align: center;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgb(77, 77, 77);
+}
+.container h1 {
+  position: absolute;
+  left: 31%;
+  top: -40px;
+  width: 180px;
+  height: 55px;
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 1px black;
+  background: rgba(255, 65, 65, 0.75);
+  border-radius: 5px;
+}
+.container h2 {
+  padding-top: 20px;
+  font-size: 2.4rem;
+  text-shadow: 1px 1px 5px red;
+  font-weight: bold;
+}
+.container h3 {
+  text-transform: capitalize;
+  font-family: "Indie Flower", cursive;
+  padding-top: 30px;
+  font-size: 3.1rem;
+  color: rgb(247, 54, 40);
+  text-shadow: 2px 2px 5px rgb(40, 155, 40);
+}
+
+/* Clock section */
+.clock {
+  padding-top: 25px;
+}
+.clock span {
+  letter-spacing: 8px;
+  font-family: "Ubuntu", sans-serif;
+}
+.clock #day,
+.clock #hour,
+.clock #minute,
+.clock #second {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.8rem;
+}
+.clock .dan {
+  text-transform: uppercase;
+  color: rgb(36, 36, 36);
+  font-size: 3.3rem;
+}
