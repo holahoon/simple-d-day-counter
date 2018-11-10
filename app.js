@@ -19,6 +19,18 @@ function countDown() {
   document.getElementById("hour").innerHTML = hours;
   document.getElementById("minute").innerHTML = minutes;
   document.getElementById("second").innerHTML = seconds;
+  
+  // When Christmas
+  if (difference < 0) {
+    clearInterval(countDown);
+    let parent = document.getElementsByClassName("clock");
+    let child = document.getElementsByTagName("span");
+    parent.removeChild(child);
+
+    let christmasMsg = document.getElementsByTagName("h3");
+    christmasMsg.innerHTML = "MERRY CHRISTMAS !";
+    christmasMsg.style.fontSize = "3.1rem";
+  }
 }
 
 setInterval(countDown, 1000);
